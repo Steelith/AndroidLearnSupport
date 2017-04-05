@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="textFromFile">
+    	Create a new resources .xml file in /res/values like a copy of strings.xml\n
+    	put a new resource with known parameter, like "textFromFile" and later yours text\n
+        Assign a value "textView" to our textBox in xml\n
+            <b>TextView textView = (TextView) findViewById(R.id.defaultText);</b>\n
+        Set value "textView" from file to our object.\n
+            <b>textView.setText(R.string.textFromFile);</b>\n
+    </string>
+    <string name="Assign_method_to_button">
+        Create a method in desired activity\n
+        Find in .xml properties and options "onClick" on button\n
+        Choose created method.\n
+    </string>
+    <string name="open_new_activity">
+        Create method which opens ActivityName\n
+            <b>public void methodName (View view) {</b>\n
+            <b>Intent intentName = new Intent(this, ActivityName.class);</b>\n
+            <b>startActivity(intentName);</b>\n
+        Apply this method to onClick properties in .xml\n
+    </string>
+    <string name="remember_values_from_activity">
+        In main activity create constant to hold string code (to recognise each values)\n
+            <b>public static final String MESSAGE_KEY = "Value from main activity";\n</b>
+        Create intent to open new activity\n
+            <b>Intent intentName = new Intent(this, ActivityName.class);\n</b>
+        Read value from main activity to some EditText\n
+            <b>EditText editText = (EditText) findViewById(R.id.editText);\n</b>
+        Put that value into variable as String (or what kind do you need)\n
+            <b>String message = editText.getText().toString();\n</b>
+        Put that variable to intent object with correct key and related with it variable\n
+            <b>intent.putExtra(MESSAGE_KEY, message);\n</b>
+        Start new activity\n
+            <b>startActivity(intentName);\n</b>
+
+        Create a TextView to read a value\n
+        Get the Intent that started this activity and extract the string\n
+            <b>Intent intentName = getIntent();\n</b>
+            <b>String message = intentName.getStringExtra(MainActivity.MESSAGE_KEY);\n</b>
+
+        Capture the layouts TextView and set the string as its text\n
+            <b>TextView textView = (TextView) findViewById(R.id.textView);\n</b>
+            <b>textView.setText(message);</b>
+    </string>
+    <string name="overflow_menu">
+        In case of some default themes on each activity,\n
+        you cannot see a overflow menu icon\n
+        1. Create a menu.xml resource file in /res/menu/\n
+        Paste:\n
+            <b>item\n
+            android:id="@+id/action_function"\n
+            android:icon="@drawable/icon"\n
+            android:title="@string/action_string_name"\n
+            app:showAsAction="ifRoom"/\n</b>
+        2. Put a below method in activity where you want a overflow menu \n
+            <b>public boolean onCreateOptionsMenu(Menu menu) {</b> \n
+            <b>MenuInflater inflater = getMenuInflater();</b> \n
+            <b>inflater.inflate(R.menu.menu, menu);</b> \n
+            <b>return true;</b> \n
+        }
+    </string>
+</resources>

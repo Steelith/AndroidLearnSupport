@@ -1,8 +1,11 @@
 package com.example.androidlearnsupport;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -10,14 +13,20 @@ import android.widget.TextView;
 public class MainMenu extends AppCompatActivity {
 
     public static final String MESSAGE_KEY = "random_shit";
+    ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
         this.setTitle(R.string.mainMenu);
+        actionBar = getSupportActionBar();
     }
-
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
     public void assignMethodToButton (View view) {
         Intent intent = new Intent(this, Activity_1.class);
         startActivity(intent);
@@ -37,10 +46,13 @@ public class MainMenu extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.editText4);
         textView.setText("");
         textView.setTextColor(getResources().getColor(R.color.black));
-
     }
     public void getTextFromNewFileInResource (View view) {
         Intent intent = new Intent(this, Activity_4.class);
+        startActivity(intent);
+    }
+    public void overflowMenuShow (View view){
+        Intent intent = new Intent(this, Activity_5.class);
         startActivity(intent);
     }
 }
