@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Android Learn Support</string>
+    <string name="mainMenu">Choose a lesson</string>
+    <string name="btn_1">Assign method to button</string>
+    <string name="btn_2">Open new activity</string>
+    <string name="btn_3">Remember data</string>
+    <string name="btn_4">Get text from new file in resources</string>
+    <string name="menuButton">Menu</string>
+    <string name="gray_text">Test it!</string>
+    <string name="textFromFile">
+    	//Create a new resources .xml file in /res/values like a copy of strings.xml\n
+    	//put a new resource with known parameter, like "textFromFile" and later yours text\n
+        //Assign a value "textView" to our textBox in xml\n
+            TextView textView = (TextView) findViewById(R.id.defaultText);\n
+        //Set value "textView" from file to our object.\n
+            textView.setText(R.string.textFromFile);\n</string>
+    <string name="Assign_method_to_button">
+        //Create a method in desired activity\n
+        //Find in .xml properties and options "onClick" on button\n
+        //Choose created method.\n
+    </string>
+    <string name="open_new_activity">
+        //Create method which opens ActivityName\n
+            public void methodName (View view) {\n
+            Intent intentName = new Intent(this, ActivityName.class);\n
+            startActivity(intentName);\n
+        //Apply this method to onClick properties in .xml\n
+    </string>
+    <string name="remember_values_from_activity">
+        //In main activity create constant to hold string code (to recognise each values)\n
+            public static final String MESSAGE_KEY = "Value from main activity";\n
+        //Create intent to open new activity\n
+            Intent intentName = new Intent(this, ActivityName.class);\n
+        //Read value from main activity to some EditText\n
+            EditText editText = (EditText) findViewById(R.id.editText);\n
+        //Put that value into variable as String (or what kind do you need)\n
+            String message = editText.getText().toString();\n
+        //Put that variable to intent object with correct key and related with it variable\n
+            intent.putExtra(MESSAGE_KEY, message);\n
+        //Start new activity\n
+            startActivity(intentName);\n
+
+        //Create a TextView to read a value\n
+        // Get the Intent that started this activity and extract the string\n
+            Intent intentName = getIntent();\n
+            String message = intentName.getStringExtra(MainActivity.MESSAGE_KEY);\n
+
+        // Capture the layouts TextView and set the string as its text\n
+            TextView textView = (TextView) findViewById(R.id.textView);\n
+            textView.setText(message);
+    </string>
+</resources>
