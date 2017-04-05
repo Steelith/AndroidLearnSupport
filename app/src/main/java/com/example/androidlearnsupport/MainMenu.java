@@ -28,8 +28,8 @@ public class MainMenu extends AppCompatActivity {
     }
     public void rememberValuesFromActivity (View view) {
         Intent intent = new Intent(this, Activity_3.class);
-        EditText editText4 = (EditText) findViewById(R.id.editText4);
-        String message = editText4.getText().toString();
+        EditText editText = (EditText) findViewById(R.id.editText4);
+        String message = editText.getText().toString();
         intent.putExtra(MESSAGE_KEY, message);
         startActivity(intent);
     }

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.text.Html;
 
 public class Activity_3 extends AppCompatActivity {
 
@@ -16,7 +17,7 @@ public class Activity_3 extends AppCompatActivity {
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainMenu.MESSAGE_KEY);
 
-        TextView textView2 = (TextView) findViewById(R.id.textView2);
-        textView2.setText(message);
+        TextView textView = (TextView) findViewById(R.id.textView4);
+        textView.setText(message);
     }
 }

@@ -19,7 +19,9 @@
         <activity android:name=".Activity_1" />
         <activity android:name=".Activity_2" />
         <activity android:name=".Activity_3" />
-        <activity android:name=".Activity_4"></activity>
+        <activity android:name=".Activity_4"
+                  android:parentActivityName=".MainMenu">
+        </activity>
     </application>
 
 </manifest>
