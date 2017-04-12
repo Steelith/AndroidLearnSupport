@@ -27,11 +27,11 @@
             android:parentActivityName=".MainMenu" />
         <activity
             android:name=".Activity_4"
-            android:parentActivityName=".MainMenu"/>
+            android:parentActivityName=".MainMenu" />
         <activity
             android:name=".Activity_5"
-            android:parentActivityName=".MainMenu">
-        </activity>
+            android:parentActivityName=".MainMenu"></activity>
+        <activity android:name=".Activity_6"></activity>
     </application>
 
 </manifest>
