@@ -31,7 +31,8 @@
         <activity
             android:name=".Activity_5"
             android:parentActivityName=".MainMenu"></activity>
-        <activity android:name=".Activity_6"></activity>
     </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>

@@ -1,8 +1,11 @@
 package com.example.androidlearnsupport;
 
+import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +15,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.io.File;
 
 public class MainMenu extends AppCompatActivity {
 
@@ -34,12 +39,13 @@ public class MainMenu extends AppCompatActivity {
                 FragmentManager FM = getFragmentManager();
                 FragmentTransaction FT = FM.beginTransaction();
                 FragmentOne F1 = new FragmentOne();
-                FragmentTwo F2 = new FragmentTwo();
 
-                FT.remove(F2);
                 FT.add(R.id.fr1_id, F1);
-                FT.addToBackStack("f1");
                 FT.commit();
+                View hideView = findViewById(R.id.fr2_id);
+                hideView.setVisibility(View.INVISIBLE);
+                View showView = findViewById(R.id.fr1_id);
+                showView.setVisibility(View.VISIBLE);
             }
         });
 
@@ -48,15 +54,17 @@ public class MainMenu extends AppCompatActivity {
             public void onClick(View v) {
                 FragmentManager FM = getFragmentManager();
                 FragmentTransaction FT = FM.beginTransaction();
-                FragmentOne F1 = new FragmentOne();
                 FragmentTwo F2 = new FragmentTwo();
 
-                FT.remove(F1);
                 FT.add(R.id.fr2_id, F2);
-                FT.addToBackStack("f2");
                 FT.commit();
+                View hideView = findViewById(R.id.fr1_id);
+                hideView.setVisibility(View.INVISIBLE);
+                View showView = findViewById(R.id.fr2_id);
+                showView.setVisibility(View.VISIBLE);
             }
         });
+
     }
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -90,5 +98,28 @@ public class MainMenu extends AppCompatActivity {
     public void overflowMenuShow (View view){
         Intent intent = new Intent(this, Activity_5.class);
         startActivity(intent);
+    }
+    public void saveSharedPreferences (View view){
+        EditText editText = (EditText) findViewById(R.id.editText8);
+        String message = editText.getText().toString();
+
+        SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString("haslo", message);
+        editor.apply();
+    }
+    public void readSharedPreferences (View view){
+        TextView textView7 = (TextView) findViewById(R.id.textView7);
+
+        SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
+        String defaultValue = sharedPref.getString("haslo", "");
+
+        textView7.setText(defaultValue);
+    }
+    //public void saveANewFile (View view){
+        //String filename = "myfile";
+
+
+        //File file = new File(context.getFilesDir(), filename);
     }
 }
