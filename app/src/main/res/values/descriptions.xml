@@ -60,4 +60,15 @@
             <b>return true;</b> \n
         }
     </string>
+    <string name="create_new_toast">
+        Simply toast with some options: \n
+        <b>Toast toast = new Toast(getApplicationContext());</b> \n
+        <b>toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);</b> \n
+        <b>toast.setDuration(Toast.LENGTH_LONG);</b> \n
+        <b>toast.setView(layout);</b> \n
+        <b>toast.show();</b> \n
+        \n
+        Default toast on middle of screen: \n
+        <b>Toast.makeText(getApplicationContext(), &quot;text&quot;, Toast.LENGTH_LONG).show();</b>
+    </string>
 </resources>

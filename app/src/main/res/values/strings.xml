@@ -1,15 +1,16 @@
 <resources>
     <string name="app_name">Android Learn Support</string>
     <string name="mainMenu">Choose a lesson</string>
-    <string name="btn_1">Assign method to button</string>
+    <string name="btn_1">Assign button</string>
     <string name="btn_2">Open new activity</string>
     <string name="btn_3">Remember data</string>
-    <string name="btn_4">Text from external file</string>
+    <string name="btn_4">External file text</string>
     <string name="btn_5">Overflow menu</string>
+    <string name="btn_8">Create new Toast</string>
     <string name="btn_9">Save a new file</string>
     <string name="menuButton">Menu</string>
-    <string name="fragment1">Fragment 1</string>
-    <string name="fragment2">Fragment 2</string>
+    <string name="fragment1">Frag 1</string>
+    <string name="fragment2">Frag 2</string>
     <string name="gray_text">Test it!</string>
     <string name="action_favorite">Favorite</string>
     <string name="action_settings">Settings</string>

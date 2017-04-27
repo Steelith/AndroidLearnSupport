@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 
@@ -99,7 +100,7 @@ public class MainMenu extends AppCompatActivity {
         Intent intent = new Intent(this, Activity_5.class);
         startActivity(intent);
     }
-    public void saveSharedPreferences (View view){
+    /*public void saveSharedPreferences (View view){
         EditText editText = (EditText) findViewById(R.id.editText8);
         String message = editText.getText().toString();
 
@@ -115,11 +116,9 @@ public class MainMenu extends AppCompatActivity {
         String defaultValue = sharedPref.getString("haslo", "");
 
         textView7.setText(defaultValue);
-    }
-    //public void saveANewFile (View view){
-        //String filename = "myfile";
-
-
-        //File file = new File(context.getFilesDir(), filename);
+    }*/
+    public void createNewToast (View view){
+        Intent intent = new Intent(this, CreateNewToast.class);
+        startActivity(intent);
     }
 }
