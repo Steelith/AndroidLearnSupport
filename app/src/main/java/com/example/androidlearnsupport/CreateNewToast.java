@@ -12,7 +12,7 @@ public class CreateNewToast extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_new_toast);
-        Toast.makeText(getApplicationContext(), "onCreate", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "onCreate sample", Toast.LENGTH_LONG).show();
         this.setTitle(R.string.btn_8);
     }
     public boolean onCreateOptionsMenu(Menu menu) {
