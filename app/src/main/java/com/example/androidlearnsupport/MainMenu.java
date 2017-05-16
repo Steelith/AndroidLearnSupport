@@ -114,4 +114,9 @@ public class MainMenu extends AppCompatActivity {
         Intent intent = new Intent(this, CreateNewToast.class);
         startActivity(intent);
     }
+
+    public  void splashScreen (View view){
+        Intent intent = new Intent(this, CreateSplashScreen.class);
+        startActivity(intent);
+    }
 }

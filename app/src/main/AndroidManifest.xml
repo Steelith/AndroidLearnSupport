@@ -37,8 +37,8 @@
         <activity
             android:name=".CreateNewToast"
             android:parentActivityName=".MainMenu" />
-        <activity
-            android:name=".MainMenu"/>
+        <activity android:name=".MainMenu" />
+        <activity android:name=".CreateSplashScreen"></activity>
     </application>
 
 </manifest>

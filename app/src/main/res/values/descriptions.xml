@@ -71,4 +71,20 @@
         Default toast on middle of screen: \n
         <b>Toast.makeText(getApplicationContext(), &quot;text&quot;, Toast.LENGTH_LONG).show();</b>
     </string>
+    <string name="create_splash_screen">
+        Set a static value (display time in miliseconds)\n
+        \n
+        <b>public static int SPLASH_TIME_OUT = 3000;</b>\n
+        \n
+        Write on onCreate method:\n
+        \n
+        <b>new Handler().postDelayed(new Runnable() {</b>\n
+        <b>@Override</b>\n
+        <b>public void run() {</b>\n
+        <b>Intent splashIntent = new Intent(SplashScreen.this, MainMenu.class);</b>\n
+        <b>startActivity(splashIntent);</b>\n
+        <b>finish();</b>\n
+        <b>}</b>\n
+        <b>},SPLASH_TIME_OUT);</b>\n
+    </string>
 </resources>
