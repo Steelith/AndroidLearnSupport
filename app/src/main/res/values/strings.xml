@@ -10,8 +10,7 @@
     <string name="btn_9">Save a new file</string>
     <string name="btn_10">Splash Screen</string>
     <string name="menuButton">Menu</string>
-    <string name="fragment1">Frag 1</string>
-    <string name="fragment2">Frag 2</string>
+    <string name="fragment">Fragments</string>
     <string name="gray_text">Test it!</string>
     <string name="action_favorite">Favorite</string>
     <string name="action_settings">Settings</string>

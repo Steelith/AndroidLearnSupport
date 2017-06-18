@@ -87,4 +87,44 @@
         <b>}</b>\n
         <b>},SPLASH_TIME_OUT);</b>\n
     </string>
+    <string name="fragment_1_description">
+        On mainActivity class create onClick method:\n
+        <b>Fragment fragment;\n
+        if (view == findViewById(R.id.fragment_btn1)){\n
+        fragment = new FragmentOne();\n
+        FragmentManager FM = getFragmentManager();\n
+        FragmentTransaction FT = FM.beginTransaction();\n
+        FT.replace(R.id.fragment_placement, fragment);\n
+        FT.commit();\n
+        }\n
+        if (view == findViewById(R.id.fragment_btn2)){\n
+        fragment = new FragmentTwo();\n
+        FragmentManager FM = getFragmentManager();\n
+        FragmentTransaction FT = FM.beginTransaction();\n
+        FT.replace(R.id.fragment_placement, fragment);\n
+        FT.commit();\n
+        }</b>\n
+        \n
+        <b>fragment_btn1</b> &amp; <b>fragment_btn2</b> are buttons id.\n
+        <b>fragment_placement</b> is mainActivity any layout id.\n
+        classes <b>FragmentOne</b> &amp; <b>FragmentTwo</b> are fragment classes connected with fragment layouts.
+    </string>
+    <string name="fragment_2_description">
+        In mainActivity layout create 2 buttons and any layout to contain both fragments.\n
+        Set buttons ids like from Part 1 and layout id the same.\n
+    </string>
+    <string name="fragment_3_description">
+        Create two classes (<b>FragmentOne</b> &amp; <b>FragmentTwo</b>) that extends <b>FragmentM</b> class\n
+        and change <b>onCreate</b> method:\n
+        <b>@Nullable\n
+        @Override\n
+        public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {\n
+        return inflater.inflate(R.layout.fragment_lesson_part_1, container, false);\n
+        }</b>\n
+        \n
+        Where <b>fragment_lesson_part_1</b> is related to class layout name (each fragment 1 and 2)
+    </string>
+    <string name="fragment_4_description">
+        On fragments layout put any different values to recognise different fragments.\n
+    </string>
 </resources>
