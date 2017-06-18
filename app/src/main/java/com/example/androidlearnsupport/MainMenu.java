@@ -86,4 +86,8 @@ public class MainMenu extends AppCompatActivity {
         Intent intent = new Intent(this, CreateFragments.class);
         startActivity(intent);
     }
+    public void gitbashFilesAdd (View view){
+        Intent intent = new Intent(this, GitBashFilesAdd.class);
+        startActivity(intent);
+    }
 }

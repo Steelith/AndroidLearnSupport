@@ -127,4 +127,23 @@
     <string name="fragment_4_description">
         On fragments layout put any different values to recognise different fragments.\n
     </string>
+    <string name="gitbash_description">
+        GitBash basic commands to add new files to repository:\n
+        \n
+        <b>cd /d/projectName\n
+        \n
+        git init\n
+        \n
+        git add .\n
+        \n
+        git commit -m &quot;Update text&quot;\n
+        \n
+        git push origin master</b>\n
+        \n
+        \n
+        Additional commands:\n
+        \n
+        <b>git status\n
+        exit</b>
+    </string>
 </resources>

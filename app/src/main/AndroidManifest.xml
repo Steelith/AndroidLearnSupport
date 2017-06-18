@@ -43,8 +43,10 @@
             android:parentActivityName=".MainMenu" />
         <activity
             android:name=".CreateFragments"
-            android:parentActivityName=".MainMenu">
-        </activity>
+            android:parentActivityName=".MainMenu"/>
+        <activity
+            android:name=".GitBashFilesAdd"
+            android:parentActivityName=".MainMenu"></activity>
     </application>
 
 </manifest>

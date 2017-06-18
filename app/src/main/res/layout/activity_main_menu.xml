@@ -162,4 +162,18 @@
         app:layout_constraintRight_toLeftOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/overflowMenu" />
 
+    <Button
+        android:id="@+id/gitbashFilesAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/green"
+        android:onClick="gitbashFilesAdd"
+        android:text="@string/gitbashFilesAdd"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splashScreen" />
+
 </android.support.constraint.ConstraintLayout>
