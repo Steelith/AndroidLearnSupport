@@ -10,12 +10,18 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.androidlearnsupport.fragments.FragmentFour;
+import com.example.androidlearnsupport.fragments.FragmentOne;
+import com.example.androidlearnsupport.fragments.FragmentThree;
+import com.example.androidlearnsupport.fragments.FragmentTwo;
+
 public class CreateFragments extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_fragments);
+        this.setTitle(R.string.fragment);
     }
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

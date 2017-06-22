@@ -11,6 +11,7 @@ public class GitBashFilesAdd extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_git_bash_files_add);
+        this.setTitle(R.string.gitbashFilesAdd);
     }
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

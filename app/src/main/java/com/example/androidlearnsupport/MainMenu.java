@@ -90,4 +90,8 @@ public class MainMenu extends AppCompatActivity {
         Intent intent = new Intent(this, GitBashFilesAdd.class);
         startActivity(intent);
     }
+    public void sharedPreferences (View view){
+        Intent intent = new Intent(this, SharedPreferences.class);
+        startActivity(intent);
+    }
 }

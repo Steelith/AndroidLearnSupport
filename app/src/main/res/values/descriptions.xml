@@ -146,4 +146,35 @@
         <b>git status\n
         exit</b>
     </string>
+    <string name="shared_preferences_description">
+        Declare on class:\n
+        <b>EditText usernameInput;\n
+        EditText passwordInput;\n
+        TextView dataOutput;</b>\n
+        \n
+        Bind views in onCreate method:\n
+        <b>usernameInput = (EditText) findViewById(R.id.SPusernameInput);\n
+        passwordInput = (EditText) findViewById(R.id.SPpasswordInput);\n
+        dataOutput = (TextView) findViewById(R.id.SPdisplayText);\n</b>
+        \n
+        Create 2 buttons, one to save values, other to load them:\n
+        <b>public void saveSharedPreferences(View view) {\n
+        android.content.SharedPreferences sharedPref = getSharedPreferences("UserInfo", Context.MODE_PRIVATE);\n
+        \n
+        android.content.SharedPreferences.Editor editor = sharedPref.edit();\n
+        editor.putString("username", usernameInput.getText().toString());\n
+        editor.putString("password", passwordInput.getText().toString());\n
+        editor.apply();\n
+        \n
+        Toast.makeText(getApplicationContext(),"User data saved!", Toast.LENGTH_SHORT).show();\n
+        }\n
+        public void loadSharedPreferences(View view) {\n
+        android.content.SharedPreferences sharedPref = getSharedPreferences("UserInfo", Context.MODE_PRIVATE);\n
+        \n
+        String name = sharedPref.getString("username", "Save username first");\n
+        String pw = sharedPref.getString("password", "Save password first");\n
+        \n
+        dataOutput.setText("Username: " + name + ", Password: " + pw);\n
+    }</b>
+    </string>
 </resources>
