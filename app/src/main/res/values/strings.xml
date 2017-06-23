@@ -4,7 +4,7 @@
     <string name="btn_1">Assign button</string>
     <string name="btn_2">Open new activity</string>
     <string name="btn_3">Remember data</string>
-    <string name="btn_4">External file text</string>
+    <string name="btn_4">Load text from a file</string>
     <string name="btn_5">Overflow menu</string>
     <string name="btn_8">Create new Toast</string>
     <string name="btn_9">Save a new file</string>
@@ -20,9 +20,10 @@
     <string name="shared_preferences">Shared Preferences</string>
     <string name="save">Save</string>
     <string name="load">Load</string>
-    <string name="title_activity_shared_preferences">SharedPreferences</string>
     <string name="usernameText">Username</string>
     <string name="passwordText">Password</string>
+    <string name="save_file_external">Save a file in external memory</string>
+    <string name="scrolling_text">Scrolling Text</string>
 
 </resources>
     

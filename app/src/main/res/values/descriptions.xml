@@ -177,4 +177,53 @@
         dataOutput.setText("Username: " + name + ", Password: " + pw);\n
     }</b>
     </string>
+    <string name="saveFile_description1">
+        Create 2 buttons - to save and load text and 2 objects - EditText to write and TextView to read.\n
+        Create on class each objects:\n
+        <b>EditText saveFileEditText;\n
+        TextView saveFileViewText;\n</b>
+        \n
+        Throw texts to EditText and TextView in onCreate method:\n
+        <b>saveFileEditText = (EditText)findViewById(R.id.saveFileEditText);\n
+        saveFileViewText = (TextView)findViewById(R.id.saveFileViewText);\n</b>
+        \n
+        Also create a related methods to each button:
+    </string>
+    <string name="saveFile_description2">
+        <b>public void saveFileSave(View view){\n
+        String MessageText = saveFileEditText.getText().toString();\n
+         try {\n
+             FileOutputStream fileOutputStream = openFileOutput("messagetext.txt", MODE_PRIVATE);\n
+             fileOutputStream.write(MessageText.getBytes());\n
+             fileOutputStream.close();\n
+             Toast.makeText(this, "File saved", Toast.LENGTH_SHORT).show();\n
+             saveFileEditText.setText("");\n
+            \n
+         } catch (FileNotFoundException e) {\n
+             e.printStackTrace();\n
+         } catch (IOException e) {\n
+             e.printStackTrace();\n
+         }\n
+     }\n</b>
+    </string>
+    <string name="saveFile_description3">
+        <b>public void saveFileLoad(View view){\n
+         try {\n
+             FileInputStream fileInputStream = openFileInput("messagetext.txt");\n
+             InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);\n
+             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);\n
+             StringBuilder stringBuilder = new StringBuilder();\n
+             String lines;\n
+            \n
+             while((lines=bufferedReader.readLine())!=null){\n
+                stringBuilder.append(lines+"\n");\n
+             }\n
+             saveFileViewText.setText(stringBuilder.toString());\n
+         } catch (FileNotFoundException e) {\n
+             e.printStackTrace();\n
+         } catch (IOException e) {\n
+             e.printStackTrace();\n
+         }\n
+     }</b>
+    </string>
 </resources>

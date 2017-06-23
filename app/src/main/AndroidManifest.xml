@@ -47,7 +47,13 @@
         <activity
             android:name=".GitBashFilesAdd"
             android:parentActivityName=".MainMenu" />
-        <activity android:name=".SharedPreferences"></activity>
+        <activity
+            android:name=".SharedPreferences"
+            android:parentActivityName=".MainMenu" />
+        <activity
+            android:name=".saveFileToExternal"
+            android:parentActivityName=".MainMenu">
+        </activity>
     </application>
 
 </manifest>
