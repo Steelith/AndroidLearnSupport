@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.androidlearnsupport.MainMenu"
@@ -192,7 +193,7 @@
         app:layout_constraintTop_toBottomOf="@+id/fragments" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/saveFileInExtMemory"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
@@ -205,5 +206,20 @@
         app:layout_constraintLeft_toLeftOf="@+id/guideline"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gitbashFilesAdd" />
+
+    <Button
+        android:id="@+id/scrollingTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/green"
+        android:onClick="scrollingTextView"
+        android:text="@string/scrolling_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/sharedPreferences" />
 
 </android.support.constraint.ConstraintLayout>

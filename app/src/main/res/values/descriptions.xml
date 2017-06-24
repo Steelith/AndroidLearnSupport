@@ -187,7 +187,7 @@
         <b>saveFileEditText = (EditText)findViewById(R.id.saveFileEditText);\n
         saveFileViewText = (TextView)findViewById(R.id.saveFileViewText);\n</b>
         \n
-        Also create a related methods to each button:
+        Also create a related methods to each save and load button:
     </string>
     <string name="saveFile_description2">
         <b>public void saveFileSave(View view){\n
@@ -225,5 +225,34 @@
              e.printStackTrace();\n
          }\n
      }</b>
+    </string>
+    <string name="scrolling_text_description">
+        1st method - only one TextView will be scrollable:\n
+        \n
+        Add scrollbars on layout xml file:\n
+        <b>android:scrollbars = "vertical"</b>\n
+        Create it in class where it is:\n
+        <b>TextView yourTextView;</b>\n
+        Bind it to related TextView id:\n
+        <b>yourTextView = (TextView) findViewById(R.id.yourTextViewId);</b>\n
+        At the end, write in onCreate method:\n
+        <b>yourTextView.setMovementMethod(new ScrollingMovementMethod());</b>\n
+        \n
+        2nd method - put all objects on any layout and put this layout between ScrollView brackets.\n
+        \n
+        ScrollView\n
+        _____LinearLayout\n
+        _________Button\n
+        ____________Just button\n
+        _________/Button\n
+        _________TextView\n
+        ____________Just TextView\n
+        _________/TextView\n
+        ____/LinearLayout\n
+        /ScrollView\n
+        \n
+        Scroll down to see end of description\n
+        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+        Both, button and textview will be scrollable in linear layouts borders.\n
     </string>
 </resources>

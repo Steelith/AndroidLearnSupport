@@ -7,7 +7,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/icon"
+        android:icon="@mipmap/icon_borderless"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -52,7 +52,11 @@
             android:parentActivityName=".MainMenu" />
         <activity
             android:name=".saveFileToExternal"
+            android:parentActivityName=".MainMenu" />
+        <activity
+            android:name=".scrollingTextView"
             android:parentActivityName=".MainMenu">
+
         </activity>
     </application>
 

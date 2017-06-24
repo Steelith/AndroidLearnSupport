@@ -92,4 +92,9 @@ public class MainMenu extends AppCompatActivity {
         Intent intentToSaveFiles = new Intent(this, saveFileToExternal.class);
         startActivity(intentToSaveFiles);
     }
+
+    public void scrollingTextView(View view){
+        Intent scrollingIntent = new Intent(this, scrollingTextView.class);
+        startActivity(scrollingIntent);
+    }
 }

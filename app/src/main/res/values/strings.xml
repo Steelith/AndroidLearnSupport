@@ -22,7 +22,7 @@
     <string name="load">Load</string>
     <string name="usernameText">Username</string>
     <string name="passwordText">Password</string>
-    <string name="save_file_external">Save a file in external memory</string>
+    <string name="save_file_external">Save a text in internal memory &#8230; somewhere</string>
     <string name="scrolling_text">Scrolling Text</string>
 
 </resources>
