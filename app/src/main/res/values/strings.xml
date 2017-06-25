@@ -24,6 +24,9 @@
     <string name="passwordText">Password</string>
     <string name="save_file_external">Save a text in internal memory &#8230; somewhere</string>
     <string name="scrolling_text">Scrolling Text</string>
+    <string name="chooser_title">Share this photo with</string>
+    <string name="map">Search Maps</string>
+    <string name="send_user">Send user to another app</string>
 
 </resources>
     

@@ -1,6 +1,7 @@
 package com.example.androidlearnsupport;
 
 import android.content.Intent;
+
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
 
 public class MainMenu extends AppCompatActivity {
 
@@ -97,4 +99,10 @@ public class MainMenu extends AppCompatActivity {
         Intent scrollingIntent = new Intent(this, scrollingTextView.class);
         startActivity(scrollingIntent);
     }
+
+    public void sendingUserToAnotherApp(View view){
+        Intent sendingIntent = new Intent(this, sendingUserToAnotherApp.class);
+        startActivity(sendingIntent);
+    }
+
 }

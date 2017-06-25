@@ -55,9 +55,8 @@
             android:parentActivityName=".MainMenu" />
         <activity
             android:name=".scrollingTextView"
-            android:parentActivityName=".MainMenu">
-
-        </activity>
+            android:parentActivityName=".MainMenu"></activity>
+        <activity android:name=".sendingUserToAnotherApp"></activity>
     </application>
 
 </manifest>
