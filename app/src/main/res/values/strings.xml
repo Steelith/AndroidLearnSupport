@@ -27,6 +27,9 @@
     <string name="chooser_title">Share this photo with</string>
     <string name="map">Search Maps</string>
     <string name="send_user">Send user to another app</string>
+    <string name="call">Make a call</string>
+    <string name="go_to_web">Go to Website</string>
+    <string name="send_email">Send an Email</string>
 
 </resources>
     

@@ -255,4 +255,32 @@
         \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
         Both, button and textview will be scrollable in linear layouts borders.\n
     </string>
+    <string name="free_test_space">
+        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+        test\n
+    </string>
+    <string name="sending_user_somewhere_else">
+        Main source of information about sending user to other application is inside of Intent.\n
+        Put any necessary text into String:\n
+        \n
+        <b>Uri parsedElement = Uri.parse(someString);\n
+        Intent intentName = new Intent(Intent.ACTION_DIAL, parsedElement);</b>\n
+        \n
+        <b>ACTION_DIAL</b> is for dialing a number;\n
+        <b>ACTION_VIEW</b> is for view e.g. map;\n
+        <b>ACTION_SEND</b> sends e.g. mail;\n
+        \n
+        We have declared Intent, now we need to check that there is application available to handle that intent.\n
+        In the same time we will give user possibility to choose desired application for that intent.\n
+        \n
+        <b>try {\n
+            startActivity(Intent.createChooser(emailIntent, &quot;Pick an email client&quot;));\n
+        } catch (ActivityNotFoundException e) {\n
+            Toast.makeText(this, &quot;There is no email clients installed&quot;, Toast.LENGTH_SHORT).show();\n
+        }</b>\n
+        \n
+        If we would not like to check it we can just start intent, but if there is not any application our app will crash.\n
+        \n
+        <b>startActivity(intentName);</b>\n
+    </string>
 </resources>
