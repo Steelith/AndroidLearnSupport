@@ -105,4 +105,9 @@ public class MainMenu extends AppCompatActivity {
         startActivity(sendingIntent);
     }
 
+    public void capturingPhoto (View view){
+        Intent capturePhotoIntent = new Intent(this, CapturingPhoto.class);
+        startActivity(capturePhotoIntent);
+    }
+
 }

@@ -30,6 +30,7 @@
     <string name="call">Make a call</string>
     <string name="go_to_web">Go to Website</string>
     <string name="send_email">Send an Email</string>
+    <string name="capture_photo">Capture photo from camera</string>
 
 </resources>
     
