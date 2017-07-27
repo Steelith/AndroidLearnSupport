@@ -59,15 +59,14 @@
             android:parentActivityName=".MainMenu" />
         <activity
             android:name=".sendingUserToAnotherApp"
-            android:parentActivityName=".MainMenu"/>
+            android:parentActivityName=".MainMenu" />
         <activity
             android:name=".CapturingPhoto"
-            android:parentActivityName=".MainMenu"/>
+            android:parentActivityName=".MainMenu" />
         <activity
             android:name=".GPSActivity"
-            android:parentActivityName=".MainMenu">
-
-        </activity>
+            android:parentActivityName=".MainMenu" />
+        <activity android:name=".CreateSnackBar" />
     </application>
 
 </manifest>

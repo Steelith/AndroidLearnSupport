@@ -129,4 +129,8 @@ public class MainMenu extends AppCompatActivity {
         startActivity(gpsIntent);
     }
 
+    public void createASnackbar (View view){
+        Intent snackbarIntent = new Intent (this, CreateSnackBar.class);
+        startActivity(snackbarIntent);
+    }
 }

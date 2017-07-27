@@ -322,4 +322,11 @@
         Toast.makeText(this, "GPS disabled!", Toast.LENGTH_SHORT).show();\n
     }\n</b>
     </string>
+    <string name="snackbar_description">
+         Just bind a method to button or to whatever action: \n\n
+            <b> public void snackbarPopUp (View view){\n
+        Snackbar mySnackbar = Snackbar.make(findViewById(R.id.layoutId), "text", Snackbar.LENGTH_SHORT);\n
+        mySnackbar.show();\n
+    }\n</b>
+    </string>
 </resources>
