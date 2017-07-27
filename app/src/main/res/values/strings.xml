@@ -31,6 +31,7 @@
     <string name="go_to_web">Go to Website</string>
     <string name="send_email">Send an Email</string>
     <string name="capture_photo">Capture photo from camera</string>
-
+    <string name="GPS_activity">GPS Activity</string>
+    <string name="gps_activity_button">View your location</string>
 </resources>
     

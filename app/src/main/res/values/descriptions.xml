@@ -283,4 +283,43 @@
         \n
         <b>startActivity(intentName);</b>\n
     </string>
+    <string name="gps_activity_description">
+     Bind method to activity button, it allows to get a permission to GPS location:\n
+        <b>public void locationActivation (View view) {\n
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)\n
+                != PackageManager.PERMISSION_GRANTED) {\n
+            Toast.makeText(this, "Access to location services denied.", Toast.LENGTH_SHORT).show();\n
+        } else {\n
+                LocationManager lom = (LocationManager) getSystemService(Context.LOCATION_SERVICE);\n
+                lom.requestLocationUpdates(LocationManager.GPS_PROVIDER, 3000, 10, this);\n
+        }\n
+    }\n
+\n</b>
+        Override already prepared location methods:\n
+    <b>@Override\n
+    public void onLocationChanged (Location location){\n
+        double latitude = location.getLatitude();\n
+        double longitude = location.getLongitude();\n
+        \n
+        Toast.makeText(this, "Latitude is: " + latitude + "\nLongitude is: " + longitude, Toast.LENGTH_SHORT).show();\n
+        String locationIntentData = "geo:" + latitude + "," + longitude;\n
+        \n
+        Intent locationIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(locationIntentData));\n
+        startActivity(locationIntent);\n
+    }\n</b>
+    Methods responsible for gps activation and deactivation:\n
+    <b>@Override\n
+    public void onStatusChanged (String provider, int status, Bundle extras){\n
+    }\n
+        \n
+    @Override\n
+    public void onProviderEnabled (String provider){\n
+        Toast.makeText(this, "GPS enabled!", Toast.LENGTH_SHORT).show();\n
+    }\n
+        \n
+    @Override\n
+    public void onProviderDisabled (String provider){\n
+        Toast.makeText(this, "GPS disabled!", Toast.LENGTH_SHORT).show();\n
+    }\n</b>
+    </string>
 </resources>

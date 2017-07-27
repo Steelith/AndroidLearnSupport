@@ -124,4 +124,9 @@ public class MainMenu extends AppCompatActivity {
         startActivity(capturePhotoIntent);
     }
 
+    public void gpsActivity (View view){
+        Intent gpsIntent = new Intent (this, GPSActivity.class);
+        startActivity(gpsIntent);
+    }
+
 }

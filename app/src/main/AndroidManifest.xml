@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -56,8 +57,17 @@
         <activity
             android:name=".scrollingTextView"
             android:parentActivityName=".MainMenu" />
-        <activity android:name=".sendingUserToAnotherApp" />
-        <activity android:name=".CapturingPhoto"></activity>
+        <activity
+            android:name=".sendingUserToAnotherApp"
+            android:parentActivityName=".MainMenu"/>
+        <activity
+            android:name=".CapturingPhoto"
+            android:parentActivityName=".MainMenu"/>
+        <activity
+            android:name=".GPSActivity"
+            android:parentActivityName=".MainMenu">
+
+        </activity>
     </application>
 
 </manifest>
