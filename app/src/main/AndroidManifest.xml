@@ -67,6 +67,14 @@
             android:name=".GPSActivity"
             android:parentActivityName=".MainMenu" />
         <activity android:name=".CreateSnackBar" />
+        <activity
+            android:name=".CreateFloatingActionButton"
+            android:label="@string/title_activity_floating_action_button"
+            android:parentActivityName=".MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.androidlearnsupport.MainMenu" />
+        </activity>
     </application>
 
 </manifest>

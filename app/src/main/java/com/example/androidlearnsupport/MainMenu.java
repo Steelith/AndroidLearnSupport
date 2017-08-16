@@ -133,4 +133,9 @@ public class MainMenu extends AppCompatActivity {
         Intent snackbarIntent = new Intent (this, CreateSnackBar.class);
         startActivity(snackbarIntent);
     }
+
+    public void FloatingActionButton (View view){
+        Intent fabIntent = new Intent (this, CreateFloatingActionButton.class);
+        startActivity(fabIntent);
+    }
 }

@@ -329,4 +329,16 @@
         mySnackbar.show();\n
     }\n</b>
     </string>
+    <string name="fab_description">
+        In onCreate method assign a fab with simple OnClickListener, the same like button or view:\n
+        \n
+        <b>FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab_button_id);\n
+        fab.setOnClickListener(new View.OnClickListener() {\n
+            @Override\n
+            public void onClick(View view) {\n
+                Snackbar.make(view, "your text or any action", Snackbar.LENGTH_LONG)\n
+                        .setAction("Action", null).show();\n
+            }\n
+        });</b>
+    </string>
 </resources>

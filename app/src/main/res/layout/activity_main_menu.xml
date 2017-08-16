@@ -279,4 +279,18 @@
         app:layout_constraintRight_toLeftOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/capturingPhotoButton" />
 
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/yellow"
+        android:onClick="FloatingActionButton"
+        android:text="@string/title_activity_floating_action_button"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
 </android.support.constraint.ConstraintLayout>

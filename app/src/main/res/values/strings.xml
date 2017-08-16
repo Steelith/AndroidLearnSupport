@@ -34,6 +34,7 @@
     <string name="GPS_activity">GPS Activity</string>
     <string name="gps_activity_button">View your location</string>
     <string name="snackbar_main_menu">Create a Snackbar</string>
-    <string name="title_activity_floating_action_button">FloatingActionButton</string>
+    <string name="title_activity_floating_action_button">Floating Action Button</string>
+    <string name="lesson_unknown">This lesson is not ready yet</string>
 </resources>
     
