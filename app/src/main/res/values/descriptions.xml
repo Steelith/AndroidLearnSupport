@@ -341,4 +341,25 @@
             }\n
         });</b>
     </string>
+    <string name="alert_dialog_description">
+        Create an object:\n
+        <b>AlertDialog.Builder alert = new AlertDialog.Builder(this);</b>\n
+        \n
+        After that you can change a different parameters of Alert Dialog like:\n
+        \n
+        <b>alert.setTitle("Game Over");</b>\n
+        <b>alert.setCancelable(false);</b>\n
+        <b>alert.setMessage("I completed the test!");</b>\n
+        \n
+        You can create an action in window merged with onClickListener:\n
+        <b>alert.setPositiveButton("Close Application", new DialogInterface.OnClickListener() {</b>\n
+                   <b>@Override</b>\n
+                    <b>public void onClick(DialogInterface dialog, int which) {</b>\n
+                        <b>finish();</b>\n
+                    <b>}</b>\n
+                <b>});</b>\n
+        \n
+        After set up Alert Dialog have to be shown (like a Toast):\n
+        <b>alert.show();</b>
+    </string>
 </resources>

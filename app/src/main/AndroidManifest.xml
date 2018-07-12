@@ -75,6 +75,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.androidlearnsupport.MainMenu" />
         </activity>
+        <activity android:name=".AlertDialogWindow"></activity>
     </application>
 
 </manifest>

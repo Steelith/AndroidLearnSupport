@@ -138,4 +138,9 @@ public class MainMenu extends AppCompatActivity {
         Intent fabIntent = new Intent (this, CreateFloatingActionButton.class);
         startActivity(fabIntent);
     }
+
+    public void alertDialog (View view) {
+        Intent alertDialogIntent = new Intent(this, AlertDialogWindow.class);
+        startActivity(alertDialogIntent);
+    }
 }
